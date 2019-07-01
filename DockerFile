@@ -1,0 +1,7 @@
+FROM openjdk:8
+ADD target/hello-api.jar hello-api.jar
+EXPOSE 8080
+ENTRYPOINT ["java", "-jar", "hello-api.jar"]
+
+##docker run -p9080:8080 hello-api
+##
